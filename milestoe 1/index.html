@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-content">
+        <!-- left section -->
+        <div class="left-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture"
+            style="width: 125px; height: 150px; object-fit: cover;  
+            border-radius: 90%; 
+            margin-bottom: 20px;"  
+            >
+            <!-- section 1 -->
+            <section id="career-objective">
+                <h3 style="color: rgb(165, 74, 226);">Career Objective</h3>
+                <p>To achieve excellence in my career, I strive to excel in both technical and non-technical areas. I am a strong communicator, adaptable, and detail-oriented. My goal is to contribute positively to the team and make a positive impact on the organization.</p>
+            </section>
+            <!-- section 2 -->
+            <section id="certification">
+                <h3 style="color:rgb(165, 74, 226);">Certifications</h3>
+                <ul>
+                    <li>Certified Scrum Master</li>
+                    <li>AWS Certified Solutions Architect</li>
+                    <li>Microsoft Certified: Azure Developer</li>
+                </ul>
+            </section>
+        </div>
+    
+        <!-- right section -->
+        <div class="right-section">
+            <h1>STATIC INTERACTIVE RESUME</h1>
+            <!-- section 1 -->
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li>Name: <b>Amat Ullah</b></li>
+                    <li>Email: <b><a href="mailto:amat.girl@example.com">amat.girl@example.com</a></b></li>
+                    <li>Phone: <b>123-456-7890</b></li>
+                    <li>Address: <b>123 Main St, City, State, Zip</b></li>
+                </ul>
+            </section>
+            <!-- section 2 -->
+            <section id="education">
+                <h3>Education</h3>
+                <ul>
+                    <li>Bachelor's Degree, Computer Science, University of Example</li>
+                    <li>Master's Degree, Computer Science, University of Example</li>
+                </ul>
+            </section>
+            <!-- section 3 -->
+            <section id="work-experience">
+                <h3>Work Experience</h3>
+                <p>Seeking an opportunity as a fresh candidate to start my professional career</p>
+            </section>
+            <!-- section 4 -->
+            <section id="skills" style="display: none;">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>MS Office</li>
+                    <li>Communication skills</li>
+                    <li>Teamwork</li>
+                    <li>Problem-solving</li>
+                    <li>Adaptability</li>
+                </ul>
+            </section>
+            <!-- button to toggle skills -->
+            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

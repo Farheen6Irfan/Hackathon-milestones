@@ -1,0 +1,110 @@
+
+
+/* General page settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 100px;   /* Smaller width */
+    height: 100px;  /* Smaller height */
+    object-fit: cover;  /* Ensures the picture maintains its aspect ratio */
+    border-radius: 50%; /* Keeps the picture circular */
+    margin-bottom: 20px;
+    border: 2px solid #ccc; /* Add a border around the picture */
+}
+
+
+/* Resume container */
+.resume-content {
+    display: flex; /* Aligns items side by side */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #5277f0;
+    color: white;
+}
+
+/* Left section styles */
+.left-section {
+    width: 30%; /* Set width to 30% of the parent */
+    padding: 20px;
+    background-color: #371783;
+    border-radius: 8px;
+    color: white;
+    text-align: justify;
+}
+
+/* Right section styles */
+.right-section {
+    width: 65%; /* Set width to 65% of the parent */
+    padding: 20px;
+    background-color: #250344;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Career Objective and Certifications styles */
+#career-objective, #certification {
+    margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1 {
+    margin-top: 0;
+    color: rgb(128, 203, 243);
+
+} 
+
+h3 {
+    margin-top: 0;
+    color: rgb(165, 74, 226);
+}
+
+/* Certification and personal information styles */
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* Text alignment for Certifications */
+#certification ul li, #personal-info ul li, #education ul li, #skills ul li {
+    text-align: left;
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Full width for both sections */
+    }
+}
