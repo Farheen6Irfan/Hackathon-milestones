@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="cnic">CNIC:</label>
+        <input type="number" id="cnic" name="cnic" placeholder="Enter your CNIC number" required>
+
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+
+        <label for="religion">Religion:</label>
+        <input type="text" id="religion" name="religion" placeholder="Religion" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education:</label>
+        <textarea id="education" placeholder="What is your last degree?" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Work Experience</legend>
+        <label for="workExperience">Work Experience:</label>
+        <textarea id="workExperience" placeholder="Describe your last job experience" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Your Skills:</label>
+        <textarea id="skills" placeholder="Please mention your skills" rows="4" required></textarea>
+    </fieldset>
+
+    <button type="submit"><b>Generate Your Resume</b></button>
+</form>
+
+<br>
+
+<h2 style="color: #fcfcfc;">My Resume:</h2>
+<div id="resume-preview">
+    <!-- dynamically generated resume content will be inserted here -->
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
